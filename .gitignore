@@ -1,0 +1,15 @@
+node_modules/
+es/
+esm/
+type/
+cjs/
+umd/
+dist/
+lib/
+tsout/
+/history.js
+/history.mjs
+coverage/
+/publish
+/pack
+*.yaml
