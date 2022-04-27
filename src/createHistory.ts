@@ -1,0 +1,5 @@
+const createHistory = () => {
+  //
+}
+
+export { createHistory }
