@@ -46,12 +46,5 @@ export const getDiffPath = <T extends object>(diff: T) => {
   return findTrueDiifPath(diff, [])
 }
 
-export const getPathValue = (o: any, paths: string[]) => {
-  let value = o
-
-  for (const path of paths) {
-    value = value[path]
-  }
-
-  return value
-}
+export const getPathValue = (o: any, paths: string[]) =>
+  paths.reduce((prev, path) => prev[path], o)
